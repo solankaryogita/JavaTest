@@ -1,0 +1,29 @@
+Q1)Write a program that take a command line argument n and prints a table of powers of two that are
+ less than or equal to 2^n 
+read -p "Enter the n:" n
+
+for((i=1;i<=$n;i++))
+do
+power=$((2**$i))
+
+if [ $power -le 256 ];then
+echo $power
+fi
+done
+
+
+___________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/forloop
+$ bash power.sh
+Enter the n:9
+2
+4
+8
+16
+32
+64
+128
+256
+

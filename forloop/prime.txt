@@ -1,0 +1,25 @@
+Q3) Read a number and check the number is prime or not.
+
+read -p "Enter the number:" num
+for((i=2;i<=$num/2;i++))
+do
+if [ $(($num%i)) -eq 0 ]
+then
+echo "$num is not a prime number"
+exit
+fi
+done
+echo "$num is prime number"
+_________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/forloop
+$ bash prime.sh
+Enter the number:15
+15 is not a prime number
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/forloop
+$ bash prime.sh
+Enter the number:17
+17 is prime number
+

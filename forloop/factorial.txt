@@ -1,0 +1,20 @@
+Q5)Write a program that computes a factorial of a number taken as input.5 factorial- 1*2*3*4*5
+
+read -p "Enter a number :" num
+fact=1
+for((i=1;i<=$num;i++))
+do
+fact=$((fact*i))
+echo $fact
+done
+___________________________________________
+OUTPUT
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/forloop
+$ bash factorial.sh
+Enter a number :5
+1
+2
+6
+24
+120
+
