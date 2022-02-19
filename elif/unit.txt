@@ -1,0 +1,35 @@
+Q3) Read the 1,10,100,1000 and print unit,ten,hundrade,thousand.
+
+read -p "enter 1,10,100,1000 :" num
+if [ $num == 1 ];then
+  echo "Unit"
+elif [ $num == 10 ];then
+ echo "Ten"
+elif [ $num == 100 ];then
+ echo "Hundrade"
+elif [ $num == 1000 ];then
+ echo "thousand"
+fi
+________________________________
+OUTPUT
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/elif
+$ bash unit.sh
+enter 1,10,100,1000 :1
+Unit
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/elif
+$ bash unit.sh
+enter 1,10,100,1000 :10
+Ten
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/elif
+$ bash unit.sh
+enter 1,10,100,1000 :100
+Hundrade
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/elif
+$ bash unit.sh
+enter 1,10,100,1000 :1000
+thousand
+
+

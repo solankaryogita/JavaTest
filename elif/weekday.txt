@@ -1,0 +1,31 @@
+Q2) Read a number and print the weekday
+
+for i in {1..8}
+do
+if [ "$i" == "1" ]; then
+    echo "Sunday"
+elif [ "$i" == "2" ]; then
+    echo "Monday"
+elif [ "$i" == "3" ]; then
+    echo "Tuesday"
+elif [ "$i" == "4" ]; then
+    echo "Wednesday"
+elif [ "$i" == "5" ]; then
+    echo "Thursday"
+elif [ "$i" == "6" ]; then
+    echo "Friday"
+elif [ "$i" == "7" ]; then
+    echo "Saterday"
+fi
+done
+_________________________________
+OUTPUT
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/elif
+$ bash weekday.sh
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saterday

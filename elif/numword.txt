@@ -1,0 +1,38 @@
+Q1)Read single digit number and print number into word.
+
+for i in {1..10}
+do
+if [ "$i" == "1" ]; then
+    echo "You entered one"
+elif [ "$i" == "2" ]; then
+    echo "You entered two"
+elif [ "$i" == "3" ]; then
+    echo "You entered three"
+elif [ "$i" == "4" ]; then
+    echo "You entered four"
+elif [ "$i" == "5" ]; then
+    echo "You entered five"
+elif [ "$i" == "6" ]; then
+    echo "You entered six"
+elif [ "$i" == "7" ]; then
+    echo "You entered seven"
+elif [ "$i" == "8" ]; then
+    echo "You entered eight"
+elif [ "$i" == "9" ]; then
+    echo "You entered nine"
+fi 
+done
+_______________________________
+OUTPUT
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/elif
+$ bash numword.sh
+You entered one
+You entered two
+You entered three
+You entered four
+You entered five
+You entered six
+You entered seven
+You entered eight
+You entered nine
+
