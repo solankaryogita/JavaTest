@@ -1,0 +1,35 @@
+Q5) Find the differance between original file and update file.Applay changes to the original file. 
+________________________________________________________________________
+a) create a folder original and updated.
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ mkdir original updated
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ ls
+Blue/      def.log.l       jkl.log.l      original/         status.sh
+a.txt      diff.sh         lang.sh        original.backup/  updated/
+abc.log.l  foldercheck.sh  linux-contet/  original.file.sh  updated.file.sh
+access.sh  ghi.log.l       mno.log.l      pencil/           yellow/
+b.txt      green/          op/            pink/
+________________________________________________________________________
+b)copy original.file.sh to original and updated.file.sh.to updated.
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ cp original.file.sh original
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ cp updated.file.sh updated
+__________________________________________________________________________
+c)Find the difference between these directories using linux command.
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ diff original updated
+Only in original: original.file.sh
+Only in updated: updated.file.sh
+_____________________________________________________________________________
+d)cp original to original.backup do some changes to original.file.sh and check 
+updated and original.backup are different.
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ diff -qr updated original.backup
+Only in original.backup: original
+Only in updated: updated.file.sh

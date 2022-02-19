@@ -1,0 +1,45 @@
+Q3)Execute command "hello" and "ls" and check its execution status and print whether command executed successfull or not.
+_________________________________________________________
+a)using hello command
+
+hello
+status=$?
+echo $status
+if [ $status -eq 0 ]
+then
+echo "command successfully created"
+else
+ echo "command not successfully created"
+fi
+____________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ bash status.sh
+status.sh: line 4: hello: command not found
+127
+command not successfully created
+____________________________________________________________
+b) using ls command.
+ls
+status=$?
+echo $status
+if [ $status -eq 0 ]
+then
+echo "command successfully created"
+else
+ echo "command not successfully created"
+fi
+__________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ bash status.sh
+Blue       def.log.l       jkl.log.l     original          status.sh
+a.txt      diff.sh         lang.sh       original.backup   updated
+abc.log.l  foldercheck.sh  linux-contet  original.file.sh  updated.file.sh
+access.sh  ghi.log.l       mno.log.l     pencil            yellow
+b.txt      green           op            pink
+0
+command successfully created
+

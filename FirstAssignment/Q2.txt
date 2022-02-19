@@ -1,0 +1,37 @@
+Q2 
+
+a) create file with name abc.log.l
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ touch abc.log.l, def.log.l, ghi.log.l, jkl.log.l, mno.log.l
+________________________________________________
+b) print list of files to rename.
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ ls *.log.l 
+abc.log.l  def.log.l,  ghi.log.l,  jkl.log.l,  mno.log.l
+_________________________________________________
+c) seperate basename and extention of file
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ for file in *.log.l
+> do
+> foldername=`echo $file | awk -F. '{print $1}'`
+> echo $foldername;
+> done
+abc
+def
+ghi
+jkl
+mno
+__________________________________________________
+d) print date command to show in ddmmyy
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ date "+%d/%m/%y"
+10/02/22
+_________________________________________________
+e) Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ for file in *.log.l; do foldername=`echo $file | awk -F. '{print $1}'`; echo $foldername.$(date +%d/%m/%Y).log.l; done
+abc.17/02/2022.log.l
+def.17/02/2022.log.l
+ghi.17/02/2022.log.l
+jkl.17/02/2022.log.l
+mno.17/02/2022.log.l
+

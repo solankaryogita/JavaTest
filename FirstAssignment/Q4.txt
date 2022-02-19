@@ -1,0 +1,63 @@
+Q4 Data analysis / manipulation (awk ) .
+ ___________________________________
+i)Print EmployeeName and TotalPay who has BasePay greater than 10000.
+  a)Read data file 'data.csv' from command line and extract rows which have BasePay>10000.
+
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/linux-content (master)
+$ cat data.csv | awk '{if($4>10000){print $7"   "$2}}'
+TotalPay   EmployeeName
+567595   NATHANIEL
+538909   GARY
+335279   ALBERT
+332343   CHRISTOPHER
+326373   PATRICK
+316285   DAVID
+315981   ALSON
+307899   DAVID
+302377   JOANNE
+297608   PATRICIA
+294580   EDWARD
+_________________________________________________________________________
+   b) Print EmployeeName and TotalPay.
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/linux-content (master)
+$ cat data.csv | awk '{print  $7"  "$2}'
+TotalPay  EmployeeName
+567595  NATHANIEL
+538909  GARY
+335279  ALBERT
+332343  CHRISTOPHER
+326373  PATRICK
+316285  DAVID
+315981  ALSON
+307899  DAVID
+302377  JOANNE
+297608  PATRICIA
+294580  EDWARD
+_________________________________________________________________________
+ ii)What is the aggregate TotalPay of employee whose jobtitle is 'CAPTAIN'.
+
+  a) Read data file 'data.csv from command line and extract rows which have 'CAPTAIN' in the column 'jobtitle'.
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/linux-content (master)
+$ cat data.csv | grep CAPTAIN
+2  GARY         CAPTAIN         155966  245131      137811   538909   538909
+3  ALBERT       CAPTAIN         212739  106088      16452    335279   335279
+12 PATRICIA     CAPTAIN         99722   87082       110804   297608   297608
+  _______________________________________________________________________
+  b) Extract TotalPay and calculate sum.Print the result on terminal.
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/linux-content (master)
+$ cat data.csv | grep CAPTAIN | awk '{sum+=$7}END{print "Aggregate TotalPay=" sum/NR}'
+Aggregate TotalPay=390599
+_________________________________________________________________________
+iii)Print jobtitle and overtimpay who has a overtimePay is between 7000 and 10000.
+
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/linux-content (master)
+$ cat data.csv | awk '{if($5>=7000 && $5<=10000){print $5 "  "$3}}'
+9737  DEPUTYCHIEF
+8601  ASSTDEPUTY
+_________________________________________________________________________
+iv)Print Average BasePay.
+ 
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/linux-content (master)
+$ cat data.csv | awk '{sum+=$4}END{print sum/NR}'
+157972
+

@@ -1,0 +1,24 @@
+Q6) Check if folder exists or not. if it is not present then create it.
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ nano foldercheck.sh
+read -p "Enter the foldername:" foldername
+if [ -d $foldername ]
+then
+    echo "foldername is already present: $foldername"
+else
+    mkdir $foldername
+    echo "folder created"
+
+fi
+__________________________________________________________
+a) If folder is not present then create it.
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ bash foldercheck.sh
+folder created
+___________________________________________________________
+b) if folder is present print folder is already present.
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/pooja
+$ bash foldercheck.sh
+foldername is already present: Blue
+__________________________________________________________

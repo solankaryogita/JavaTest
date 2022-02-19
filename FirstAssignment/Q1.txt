@@ -1,0 +1,42 @@
+Q1: Move files from one folder to respective folder?
+
+1: create files
+touch a.txt b.txt c.txt
+____________________________________________________________
+2: print all the files to move
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ ls
+a.txt  b.txt  c.txt
+______________________________________________________________
+3: seperate basename from extention.
+for file in *.txt
+> do
+> foldername=`echo $file | awk -F. '{print $1}'`
+> echo $foldername;
+> done
+a
+b
+c
+____________________________________________
+4: Make folder 
+$ for file in *.txt ; do foldername=`echo $file | awk -F. '{print $1}'`; mkdir $foldername; done
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ ls -p
+a/  a.txt  b/  b.txt  c/  c.txt
+_______________________________________________________
+5: move file to folder 
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ for file in *.txt ; do foldername=`echo $file | awk -F. '{print $1}'`;rm -r $foldername; mkdir $foldername; mv $file $foldername; done
+_______________________________________________________________________________-
+OUTPUT
+You@Sandip MINGW64 ~/Desktop/Bridgelabz/pooja
+$ ls a b c
+a:
+a.txt
+
+b:
+b.txt
+
+c:
+c.txt
+
