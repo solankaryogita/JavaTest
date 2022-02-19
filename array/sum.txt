@@ -1,0 +1,14 @@
+Q4) Write a program to show sum of three integer adds to zero.
+
+declare -a array=( 1 2 3  )
+sum="$((${array[@]/%/+}0))"
+echo "Total: $sum"
+
+
+___________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/array
+$ bash sum.sh
+Total: 6
+

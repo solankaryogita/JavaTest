@@ -1,0 +1,18 @@
+Q5)Take a range from 1-100, find the digits that are repeated twice like 33,77,etc and store them in an array.
+
+a=(11 22 33 44 55 66 77 88 99 )
+declare -A b
+ for i in "${a[@]}"
+ do
+     b["$i"]=1
+done
+  echo "${!b[@]}"
+__________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/array
+$ bash twice.sh
+99 22 88 11 77 66 55 44 33
+
+
+
