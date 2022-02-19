@@ -1,0 +1,47 @@
+Q2) Read a number and display the week day .
+
+read -p "Enter number:" num
+
+case $num in
+
+1)
+  echo "Sunday"
+;;
+2)
+  echo "Monday"
+;;
+3)
+  echo "Tuesday"
+;;
+4)
+  echo "Wednesday"
+;;
+5)
+  echo "Thursday"
+;;
+6)
+ echo "Friday"
+;;
+7)
+  echo "Saterday"
+;;
+*)
+  echo "Enter valid num"
+esac
+________________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/switchcase
+$ bash dayword.sh
+num:1
+Sunday
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/switchcase
+$ bash dayword.sh
+num:10
+Enter valid num
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/switchcase
+$ bash dayword.sh
+num:5
+Thursday

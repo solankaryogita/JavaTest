@@ -1,0 +1,39 @@
+Q3) Read a number 1,10,100,1000 and display unit,ten,hundrade.
+
+read -p "Enter the number 1,10,100,1000:" num
+
+case $num in
+
+1)
+  echo "Unit"
+;;
+10)
+  echo "Ten"
+;;
+100)
+  echo "Hundrade"
+;;
+1000)
+  echo "Thousand"
+;;
+*)
+  echo "Enter valid num"
+;;
+esac
+_______________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/switchcase
+$ bash ten.sh
+Enter the number 1,10,100,1000:1
+Unit
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/switchcase
+$ bash ten.sh
+Enter the number 1,10,100,1000:100
+Hundrade
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/switchcase
+$ bash ten.sh
+Enter the number 1,10,100,1000:15
+Enter valid num
