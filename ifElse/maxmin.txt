@@ -1,0 +1,34 @@
+Q1) Write a program that reads 5 random 3 digit value and then output the minimum and maximum value.
+
+for i in {100..104}
+do
+echo $i
+if [ $i -gt 100 ]; then
+echo "$i is Maximum than 100 "
+elif [ $i -gt 101 ]; then
+echo "$i is Maximum  101"
+elif [ $i -gt 102 ]; then
+echo "$i is Maximum  102"
+elif [ $i -gt 103 ]; then
+echo "$i is Maximum  103"
+else
+  echo "$i is Minimum" $i
+
+fi
+
+done
+________________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/ifelse
+$ bash maxmin.sh
+100
+100 is Minimum 100
+101
+101 is Maximum than 100
+102
+102 is Maximum than 100
+103
+103 is Maximum than 100
+104
+104 is Maximum than 100

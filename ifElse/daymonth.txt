@@ -1,0 +1,30 @@
+Q2)Write a program that takes day and month from the command line and prints 
+true if day of month is betwen march 20 and june 20, false otherwise.
+
+read -p "Enter the date:" day
+read -p "Enter the month:" month
+
+
+if (( ($month <= 6 & $day <= 20) ))
+then
+    echo $month $day "True"
+ elif (( ($month >= 3 & $month <6) & ($date<31) ))
+ then
+     echo "true" $month $day
+   else
+      echo "False"
+fi
+______________________________________________________
+OUTPUT
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/ifelse
+$ bash daymonth.sh
+Enter the date:5
+Enter the month:7
+daymonth.sh: line 8: ((: (7 >= 3 & 7 <6) & (<31) : syntax error: operand expected (error token is "<31) ")
+False
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/ifelse
+$ bash daymonth.sh
+Enter the date:5
+Enter the month:4
+4 5 True
