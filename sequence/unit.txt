@@ -1,0 +1,31 @@
+Q5)unit cinversion.
+
+length=60feet
+width=40feet
+onefeet=0.3048
+
+echo $length $width $onefeet
+60feet x 40feet = ?meter
+meter=`echo $length $width $onefeet | awk '{print $1*$3}{print "by"}{print $2*$3}'`
+
+echo "60feet x 40feet = $meter meter"
+
+echo "Enter no of Total plots"
+read plots
+area=`echo  $meter $plots | awk '{print $1*$2}'`
+echo "$area acers"
+___________________________________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+3
+60feet 40feet 0.3048
+random.sh: line 66: 60feet: command not found
+60feet x 40feet = 18.288
+by
+12.192 meter
+Enter no of Total plots
+25
+0 acers
+

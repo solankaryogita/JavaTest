@@ -1,0 +1,28 @@
+Q2)find a dice number
+y=$((RANDOM%6 + 1));
+echo $y
+__________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+6
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+2
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+3
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+5
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+4
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+1
+

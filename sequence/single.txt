@@ -1,0 +1,13 @@
+Q1)Find single digit random number.
+
+a=$((RANDOM%10))
+echo $a
+______________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+6
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+5

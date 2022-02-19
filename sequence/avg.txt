@@ -1,0 +1,37 @@
+Q4)find sum and average
+
+a=$((RANDOM % 5 + 10 ))
+echo $a
+
+b=$((RANDOM % 5 + 10 ))
+
+echo $b
+
+c=$((RANDOM % 5 + 10 ))
+
+echo $c
+
+d=$((RANDOM % 5 + 10 ))
+
+echo $d
+
+e=$((RANDOM % 5 + 10 ))
+
+echo $e
+
+sum=$(($a+$b+$c+$d+$e))
+echo "The sum of 5 RANDOMS" $sum
+avg=$(($sum/5))
+echo "avg is:"$avg
+____________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+11
+11
+14
+14
+11
+The sum of 5 RANDOMS 61
+avg is:12

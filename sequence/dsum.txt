@@ -1,0 +1,16 @@
+Q3) sum of two dice.
+
+dice1=$((RANDOM%6))
+echo $dice1
+dice2=$((RANDOM%6))
+echo $dice2
+sum=$((dice1+dice2))
+________________________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/sequence
+$ bash random.sh
+4
+5
+ The sum is : 9
+
