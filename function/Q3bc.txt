@@ -1,0 +1,50 @@
+Q3)b)c)
+#Get a number is palindrome or not.
+echo "Enter the number"
+read n
+function pali
+{
+number=$n
+reverse=0
+while [ $n -gt 0 ]
+do
+a=`expr $n % 10`
+n=`expr $n / 10`
+reverse=`expr $reverse \* 10 + $a`
+echo $reverse
+done
+
+if [ $number -eq $reverse ]
+then
+echo "number is paindrom"
+else
+echo "number is not palindrom"
+fi
+#check palindrome number is prime or not.
+for((i=2;i<=$reverse/2;i++))
+do
+if [ $(($reverse%i)) -eq 0 ]
+then
+echo "$reverse is not a prime number"
+exit
+fi
+done
+echo "$reverse is prime number"
+
+}
+r=`pali $n`
+echo $r
+_________________________________________________________
+OUTPUT
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/function
+$ bash palindrome.sh
+Enter the number
+121
+1 12 121 number is paindrom 121 is not a prime number
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/function
+$ bash palindrome.sh
+Enter the number
+131
+1 13 131 number is paindrom 131 is prime number
+

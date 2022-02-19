@@ -1,0 +1,26 @@
+Q3
+a) write aprogram to check number is prime or not.
+
+read -p "Enter the number:" num
+for((i=2;i<=$num/2;i++))
+do
+if [ $(($num%i)) -eq 0 ]
+then
+echo "$num is not a prime number"
+exit
+fi
+done
+echo "$num is prime number"
+_____________________________________________________
+OUTPUT
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/function
+$ bash prime.sh
+Enter a number :3
+3 is prime number
+
+Pooja@DESKTOP-CIDFRAF MINGW64 ~/Desktop/Bridgelabz/function
+$ bash prime.sh
+Enter a number :4
+4 is not a prime number
+
